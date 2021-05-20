@@ -1,0 +1,32 @@
+.inputOption {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.inputOption:hover {
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+}
+
+.inputOption > h4 {
+  margin-left: 5px;
+}
+
+.inputOption > .MuiSvgIcon-root {
+  filter: brightness(1.1);
+}
+
+@media all and (max-width: 700px) {
+  .inputOption > .MuiSvgIcon-root {
+    font-size: small;
+  }
+  .inputOption > h4 {
+    font-size: smaller;
+  }
+}
