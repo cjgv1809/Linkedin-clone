@@ -96,13 +96,13 @@
   cursor: pointer;
   margin-bottom: 5px;
   padding: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .sidebar__recentItem:hover {
-  background-color: black;
+  color: #0a66c2;
   border-radius: 10px;
   cursor: pointer;
-  color: whitesmoke;
 }
 
 .sidebar__hash {

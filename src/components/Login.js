@@ -125,7 +125,11 @@ function Login() {
             </span>
           </p>
           <h3>OR</h3>
-          <div className="login__buttonGoogle" onClick={signInWithGoogle}>
+          <div
+            className="login__buttonGoogle"
+            onClick={signInWithGoogle}
+            role="button"
+          >
             <img src={GoogleLogo} alt="" />
             Sign in with Google
           </div>

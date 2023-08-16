@@ -32,9 +32,11 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
-    width: 300,
+    width: "90%",
+    maxWidth: "600px",
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
+    borderRadius: "10px",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(1),
   },
@@ -220,6 +222,7 @@ function Feed() {
                 onChange={(e) => setInput(e.target.value)}
                 type="text"
                 placeholder="What do you want to talk about?"
+                autoFocus
               />
 
               {assetArea === "image" ? (
@@ -236,6 +239,7 @@ function Feed() {
                     id="file"
                     style={{ display: "none" }}
                     onChange={handleChange}
+                    autoFocus
                   />
                   <p>
                     <label htmlFor="file">
